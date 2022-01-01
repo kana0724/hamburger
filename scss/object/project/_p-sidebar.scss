@@ -1,0 +1,25 @@
+.p-sidebar {
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #707070;
+    background-color: #F2EDE9;
+    &__menu {
+        padding-top: 218px;
+        padding-left: 48px;
+        padding-bottom: 218px;
+        &__category {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        &__each {
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 2em;
+            padding-left: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        @include pc {
+            padding-bottom: 0;
+        }
+    }
+}

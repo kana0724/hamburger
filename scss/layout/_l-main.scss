@@ -1,0 +1,11 @@
+.l-main {
+    width: 100%;
+    @include pc {
+        display:flex;
+    }
+    &__left {
+        @include pc {
+            width: 80%;
+        }
+    }
+}

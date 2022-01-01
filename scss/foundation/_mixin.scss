@@ -1,0 +1,28 @@
+$breakpoints: (
+ sp: 375px,
+ tb: 834px,
+ pc: 1280px
+);
+
+@mixin sp {
+  @media only screen and (min-width: map-get($breakpoints, sp)) {
+    @content;
+  }
+}
+
+@mixin tb {
+  @media only screen and (min-width: map-get($breakpoints, tb)) {
+    @content;
+  }
+}
+
+@mixin pc {
+    @media only screen and (min-width: map-get($breakpoints, pc)) {
+      @content;
+    }
+  }
+
+*{
+    transition-property:font-size, height, width, top;
+    transition-duration:0.3s;
+}

@@ -1,0 +1,116 @@
+.p-header {
+    background-color: #FFF7EF;
+    text-align: center;
+    z-index: 100;
+    height: 217px;
+    @include pc {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    &__logo {
+        padding-top: 3.3rem;
+        padding-bottom: 2.6rem;
+        @include pc {
+            padding: 0 0 0 65px;
+        }
+    }
+}
+.p-toggle-btn {
+    &__menu {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        color: #707070;
+        position: absolute;
+        top: 20px;
+        right: 18px;
+        cursor: pointer;
+        @include pc {
+            z-index: 1000;
+            top: 90px;
+            right: -130px;
+            cursor: auto;
+        }
+    }
+    &__close-btn {
+        position: fixed;
+        right: 15px;
+        top: 23px;
+        display: none;
+        z-index: 200;
+        &.is-open {
+            display: block;
+            @include pc {
+                display: none;
+            }
+        }
+        &__close {
+            display: block;
+            position: relative;
+            top: 0px;
+            width: 32px;
+            height: 32px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 6px;
+                height: 40px;
+                transform: translate(-50%,-50%) rotate(45deg);
+                background-color: #707070;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 6px;
+                height: 40px;
+                transform: translate(-50%,-50%) rotate(-45deg);
+                background-color: #707070;
+            }
+        }
+    }
+    
+}
+
+.p-search-form {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 45px;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: #707070;
+    @include pc {
+        padding-bottom: 0;
+        margin-right: 30px;
+    }
+    &__search {
+        width: 230px;
+        height: 46px;
+        background-color: #FFFFFF;
+        border: solid 1px;
+        border-radius: 10px;
+        border-color: #707070;
+        text-align: left;
+        padding-left: 1rem;
+        margin-right: 12px;
+        @include tb {
+            width: 396px;
+        }
+    }
+    &__submit {
+        width: 78px;
+        height: 46px;
+        background: linear-gradient(180deg, #F2EDE9, #DED8D3);
+        border: solid 1px;
+        border-radius: 10px;
+        border-color: #707070;
+        font-weight: bold;
+        @include tb {
+            width: 136px;
+        }
+    }
+}

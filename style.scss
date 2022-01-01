@@ -1,0 +1,22 @@
+@charset "utf-8";
+//====================
+//foundation
+//====================
+@import "./scss/foundation/reset";
+@import "./scss/foundation/mixin";
+@import "./scss/foundation/base";
+//====================
+//layout
+//====================
+@import "./scss/layout/l-header";
+@import "./scss/layout/l-main";
+@import "./scss/layout/l-sidebar";
+@import "./scss/layout/l-footer";
+//====================
+//object
+//====================
+
+@import "./scss/object/project/p-header";
+@import "./scss/object/project/p-main";
+@import "./scss/object/project/p-sidebar";
+@import "./scss/object/project/p-footer";
