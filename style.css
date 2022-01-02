@@ -818,9 +818,17 @@ h4 {
 .p-map {
   width: 100%;
   position: relative;
-}
-.p-map__wrap {
+  top: 0px;
   background-color: #000;
+}
+.p-map__google {
+  width: 100%;
+  min-height: 691px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0;
+  filter: opacity(60%);
+  -webkit-filter: opacity(60%);
 }
 .p-map__opacity {
   position: absolute;

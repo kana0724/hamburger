@@ -138,9 +138,15 @@
 .p-map {
     width:100%;
     position: relative;
-    &__wrap {
-        background-color: #000;
-    }
+    top: 0px;
+    background-color: #000;
+        &__google {
+            width: 100%;
+            min-height: 691px;
+            object-fit: cover;
+            border:0; filter:opacity(60%);
+            -webkit-filter:opacity(60%)
+        }
     &__opacity {
         position: absolute;
         top: 0;
