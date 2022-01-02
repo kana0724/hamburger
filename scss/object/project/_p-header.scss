@@ -19,13 +19,17 @@
 .p-toggle-btn {
     &__menu {
         font-family: 'Roboto', sans-serif;
-        font-size: 2rem;
+        font-size: 20px;
         color: #707070;
         position: absolute;
         top: 20px;
         right: 18px;
         cursor: pointer;
+        @include tb {
+            font-size: 34px;
+        }
         @include pc {
+            font-size: 34px;
             z-index: 1000;
             top: 90px;
             right: -130px;
@@ -98,6 +102,9 @@
         padding-left: 1rem;
         margin-right: 12px;
         @include tb {
+            width: 396px;
+        }
+        @include pc {
             width: 396px;
         }
     }

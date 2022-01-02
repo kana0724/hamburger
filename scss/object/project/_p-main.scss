@@ -40,9 +40,13 @@
             position: absolute;
             top: 0px;
             line-height: 285px;
-            left: 2.7rem;
+            left: 25px;
+            @include tb{
+                left: 86px;
+            }
             @include pc{
                 line-height: 530px;
+                left: 86px;
             }
         }
     }
@@ -83,7 +87,7 @@
         } 
         &__img {
             width: 100%;
-            height: 642px;
+            height: auto;
             object-fit: cover;
         }
     }
@@ -91,12 +95,20 @@
         position: relative;
         &::after {
             content: "";
-            width: 4rem;
+            width: 40px;
             height: 4px;
             background-color: #fff;
             position: absolute;
-            top: 6rem;
+            top: 60px;
             left: 0;
+            @include tb {
+                width: 75px;
+                top: 66px;
+            }
+            @include pc {
+                width: 63px;
+                top: 110px;
+            }
         }
     }
     &__opacity {
@@ -109,7 +121,7 @@
         -ms-transform: translateX(-50%);
         &-box{
             background-color: rgba(255,255,255,.8);
-            padding: 2.6rem 1.2rem 5.4rem 1.2rem;
+            padding: 26px 12px 54px 12px;
             margin-top: 10px;
             h4 {
                 padding-bottom: 30px;
@@ -117,7 +129,7 @@
             }
             p {
                 font-size: 16px;
-                line-height: 2.3rem;
+                line-height: 23px;
                 color: #3C2A10;
             }
         }
@@ -125,7 +137,6 @@
 }
 .p-map {
     width:100%;
-    height: 691px;
     position: relative;
     &__wrap {
         background-color: #000;
@@ -146,22 +157,28 @@
         }
     }
     &__text {
-        width: 78%;
+        padding: 48px 42px;
         position: absolute;
-        top: 40px;
+        top: 0px;
         color: #fff;
-        margin-left: 11%;
+        @include pc {
+            padding: 90px 120px;
+        }
         &__ttl {
-            font-size: 3rem;
+            font-size: 30px;
             font-weight: bold;
             line-height: normal;
-            margin-bottom: 48px;
+            margin-bottom: 52px;
+            @include pc {
+                font-size: 36px;
+                margin-bottom: 116px;
+            }
         }
         &__detail { 
             font-size: 16px;
             font-weight: bold;
-            line-height: 3.3rem;
-            height: 518px;
+            line-height: 33px;
+            height: 100%;
             overflow: hidden;
         }
     }
@@ -175,6 +192,12 @@
             position: absolute;
             top: 58px;
             left: 0;
+            @include tb {
+                top: 58px;
+            }
+            @include pc {
+                top: 98px;
+            }
         }
     }
 }

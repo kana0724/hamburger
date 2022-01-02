@@ -23,6 +23,6 @@ $breakpoints: (
   }
 
 *{
-    transition-property:font-size, height, width, top;
-    transition-duration:0.3s;
+    transition-property:font-size, height, width, top, left;
+    transition-duration:0.5s;
 }
