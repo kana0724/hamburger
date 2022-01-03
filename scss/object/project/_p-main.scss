@@ -68,11 +68,11 @@
                 color:#EAEAEA;
                 position: absolute;
                 top: 25px;
-                left: 1.2rem;
+                left: 12px;
             }
         }
         &__right {
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             position: relative;
             @include tb {
                 width: 47%;
@@ -82,7 +82,7 @@
                 color:#fff;
                 position: absolute;
                 top: 25px;
-                left: 1.2rem;
+                left: 12px;
             }
         } 
         &__img {
@@ -139,6 +139,7 @@
         position: relative;
         top: 0px;
         background-color: #000;
+        overflow: hidden;
         iframe {
             width: 100%;
             min-height: 691px;
@@ -164,7 +165,6 @@
         &__text {
             padding: 48px 42px;
             position: absolute;
-            overflow: hidden;
             top: 0px;
             color: #fff;
             @include pc {
@@ -185,14 +185,13 @@
                 font-weight: bold;
                 line-height: 33px;
                 height: 100%;
-                overflow: hidden;
             }
         }
         &__under-bar {
             position: relative;
             &::after {
                 content: "";
-                width: 7.5rem;
+                width: 75px;
                 height: 2px;
                 background-color: #fff;
                 position: absolute;
