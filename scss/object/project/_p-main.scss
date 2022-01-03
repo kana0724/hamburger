@@ -134,75 +134,76 @@
             }
         }
     }
-}
-.p-map {
-    width:100%;
-    position: relative;
-    top: 0px;
-    background-color: #000;
-        &__google {
+    &__map {
+        width:100%;
+        position: relative;
+        top: 0px;
+        background-color: #000;
+        iframe {
             width: 100%;
             min-height: 691px;
             object-fit: cover;
             border:0; filter:opacity(60%);
             -webkit-filter:opacity(60%)
         }
-    &__opacity {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 60%;
-        background-color: #000;
-        opacity: 0.29;
-        @include tb {
-            height: 100%;
-        }
-        @include pc {
-            width: 60%;
-        }
-    }
-    &__text {
-        padding: 48px 42px;
-        position: absolute;
-        top: 0px;
-        color: #fff;
-        @include pc {
-            padding: 90px 120px;
-        }
-        &__ttl {
-            font-size: 30px;
-            font-weight: bold;
-            line-height: normal;
-            margin-bottom: 52px;
-            @include pc {
-                font-size: 36px;
-                margin-bottom: 116px;
-            }
-        }
-        &__detail { 
-            font-size: 16px;
-            font-weight: bold;
-            line-height: 33px;
-            height: 100%;
-            overflow: hidden;
-        }
-    }
-    &__under-bar {
-        position: relative;
-        &::after {
-            content: "";
-            width: 7.5rem;
-            height: 2px;
-            background-color: #fff;
+        &__opacity {
             position: absolute;
-            top: 58px;
+            top: 0;
             left: 0;
+            width: 100%;
+            height: 60%;
+            background-color: #000;
+            opacity: 0.29;
             @include tb {
-                top: 58px;
+                height: 100%;
             }
             @include pc {
-                top: 98px;
+                width: 60%;
+            }
+        }
+        &__text {
+            padding: 48px 42px;
+            position: absolute;
+            overflow: hidden;
+            top: 0px;
+            color: #fff;
+            @include pc {
+                padding: 90px 120px;
+            }
+            &__ttl {
+                font-size: 30px;
+                font-weight: bold;
+                line-height: normal;
+                margin-bottom: 52px;
+                @include pc {
+                    font-size: 36px;
+                    margin-bottom: 116px;
+                }
+            }
+            &__detail { 
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 33px;
+                height: 100%;
+                overflow: hidden;
+            }
+        }
+        &__under-bar {
+            position: relative;
+            &::after {
+                content: "";
+                width: 7.5rem;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                top: 58px;
+                left: 0;
+                @include tb {
+                    top: 58px;
+                }
+                @include pc {
+                    top: 98px;
+                }
             }
         }
     }
