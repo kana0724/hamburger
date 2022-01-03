@@ -6,11 +6,9 @@
     @include pc {
         display: flex;
         align-items: center;
-        position: relative;
     }
     &__logo {
-        padding-top: 3.3rem;
-        padding-bottom: 2.6rem;
+        padding: 36px 0;
         @include pc {
             padding: 0 0 0 65px;
         }

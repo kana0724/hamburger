@@ -527,12 +527,10 @@ h4 {
   .p-header {
     display: flex;
     align-items: center;
-    position: relative;
   }
 }
 .p-header__logo {
-  padding-top: 3.3rem;
-  padding-bottom: 2.6rem;
+  padding: 36px 0;
 }
 @media only screen and (min-width: 1280px) {
   .p-header__logo {
