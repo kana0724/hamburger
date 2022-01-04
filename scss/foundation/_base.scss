@@ -27,20 +27,6 @@ h2 {
      font-weight: bold;
      color: #FFFFFF;
      @include pc {
-          font-size: 36px;
+          font-size: 40px;
      }
-}
-
-h3 {
-     font-family: 'Roboto', sans-serif;
-     font-size: 41px;
-     @include pc {
-          font-size: 80px;
-     }
-}
-
-h4 {
-     font-family: 'M PLUS 1p', sans-serif;
-     font-size: 24px;
-     font-weight: bold;
-}
+ }

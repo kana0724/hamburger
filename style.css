@@ -438,24 +438,8 @@ h2 {
 }
 @media only screen and (min-width: 1280px) {
   h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 41px;
-}
-@media only screen and (min-width: 1280px) {
-  h3 {
-    font-size: 80px;
-  }
-}
-
-h4 {
-  font-family: "M PLUS 1p", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .l-header {
@@ -627,7 +611,7 @@ h4 {
   border-radius: 10px;
   border-color: #707070;
   text-align: left;
-  padding-left: 1rem;
+  padding-left: 10px;
   margin-right: 12px;
 }
 @media only screen and (min-width: 834px) {
@@ -738,10 +722,17 @@ h4 {
   }
 }
 .p-main__flex__left h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
   color: #EAEAEA;
   position: absolute;
   top: 25px;
   left: 12px;
+}
+@media only screen and (min-width: 1280px) {
+  .p-main__flex__left h3 {
+    font-size: 80px;
+  }
 }
 .p-main__flex__right {
   margin-bottom: 50px;
@@ -754,10 +745,17 @@ h4 {
   }
 }
 .p-main__flex__right h3 {
-  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
+  color: #FFFFFF;
   position: absolute;
   top: 25px;
   left: 12px;
+}
+@media only screen and (min-width: 1280px) {
+  .p-main__flex__right h3 {
+    font-size: 80px;
+  }
 }
 .p-main__flex__img {
   width: 100%;
@@ -804,6 +802,9 @@ h4 {
   margin-top: 10px;
 }
 .p-main__opacity-box h4 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
   padding-bottom: 30px;
   color: #3C2A10;
 }
@@ -897,6 +898,50 @@ h4 {
   .p-main__map__under-bar::after {
     top: 98px;
   }
+}
+
+.p-archive {
+  margin: 20px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+.p-archive__text {
+  color: #3C2A10;
+}
+.p-archive__text h3 {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 40px 0;
+}
+.p-archive__text p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+.p-archive__menu {
+  background-color: #3C2B1C;
+  color: #FFFFFF;
+}
+.p-archive__menu img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-archive__menu__text {
+  padding: 36px 30px;
+}
+.p-archive__menu__text h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.p-archive__menu__text h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.p-archive__menu__text p {
+  font-size: 16px;
+  line-height: 23px;
 }
 
 .p-sidebar {

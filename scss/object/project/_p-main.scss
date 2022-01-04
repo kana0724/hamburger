@@ -65,10 +65,15 @@
                 margin-bottom: 40px;
             }
             h3 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 41px;
                 color:#EAEAEA;
                 position: absolute;
                 top: 25px;
                 left: 12px;
+                @include pc {
+                    font-size: 80px;
+                }
             }
         }
         &__right {
@@ -79,10 +84,15 @@
                 margin-bottom: 40px;
             }
             h3 {
-                color:#fff;
+                font-family: 'Roboto', sans-serif;
+                font-size: 41px;
+                color:#FFFFFF;
                 position: absolute;
                 top: 25px;
                 left: 12px;
+                @include pc {
+                    font-size: 80px;
+                }
             }
         } 
         &__img {
@@ -124,6 +134,9 @@
             padding: 26px 12px 54px 12px;
             margin-top: 10px;
             h4 {
+                font-family: 'M PLUS 1p', sans-serif;
+                font-size: 24px;
+                font-weight: bold;
                 padding-bottom: 30px;
                 color: #3C2A10;
             }
@@ -203,6 +216,49 @@
                 @include pc {
                     top: 98px;
                 }
+            }
+        }
+    }
+}
+
+.p-archive {
+    margin: 20px;
+    font-family: 'M PLUS 1p', sans-serif;
+    &__text {
+        color: #3C2A10;
+        h3 {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 40px 0;
+        }
+        p {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 24px;
+        }
+    }
+    &__menu {
+        background-color: #3C2B1C;
+        color: #FFFFFF;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        &__text {
+            padding: 36px 30px;
+            h4 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            h5 {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 23px;
             }
         }
     }
