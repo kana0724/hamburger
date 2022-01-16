@@ -639,6 +639,9 @@ h2 {
   }
 }
 
+.p-main {
+  background-color: #FFFDFA;
+}
 .p-main__background {
   position: fixed;
   left: 0;
